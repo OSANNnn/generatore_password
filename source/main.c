@@ -21,6 +21,7 @@ int main()
             if (menu == 1)
             {
                 lunghezza = lunghezzaPassword();
+                printf("\n");
                 for (int i = 0; i<lunghezza; i++)
                 {
                     password[i] = randomCharGenerator(i);
