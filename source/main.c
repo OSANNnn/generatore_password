@@ -13,16 +13,20 @@ int main()
 
     do
     {
-        printf("[1] Genera password. \n [0] Esci. \n Scegli l'opzione: ");
+        printf("\n");
+        printf("[1] Genera password. \n[0] Esci. \nScegli l'opzione: ");
         scanf("%d", &menu);
         if (menu)
         {
-            if (menu=1)
+            if (menu == 1)
             {
+                lunghezza = lunghezzaPassword();
                 for (int i = 0; i<lunghezza; i++)
                 {
-                password[i] = randomCharGenerator(i);
-                }    
+                    password[i] = randomCharGenerator(i);
+                    printf("%c", password[i]);
+                }
+                printf("\n");
             }
             else
             {
